@@ -67,7 +67,7 @@ const Contact = () => {
           <span className="inline-block bg-gradient-to-r from-primary-100 to-accent-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium">
             Get In Touch
           </span>
-          <h2 className="text-4xl md:text-5xl font-display font-bold gradient-text">
+          <h2 className="text-3xl md:text-4xl font-display font-bold gradient-text">
             We're Here to Help
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -203,7 +203,7 @@ const Contact = () => {
                 <div className="bg-white/10 backdrop-blur-sm rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6 animate-float border-2 border-white/30">
                   <MapPin className="w-12 h-12" strokeWidth={2} />
                 </div>
-                <h3 className="text-3xl md:text-4xl font-display font-bold mb-4 drop-shadow-lg">
+                <h3 className="text-3xl md:text-3xl font-display font-bold mb-4 drop-shadow-lg">
                   Visit Our Store
                 </h3>
                 <p className="text-lg md:text-xl text-white/95 mb-6 drop-shadow-md max-w-sm mx-auto">

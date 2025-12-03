@@ -41,7 +41,7 @@ const About = () => {
           <span className="inline-block bg-gradient-to-r from-primary-100 to-accent-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium">
             About Us
           </span>
-          <h2 className="text-4xl md:text-5xl font-display font-bold gradient-text">
+          <h2 className="text-3xl md:text-4xl  font-display font-bold gradient-text">
             Your Trusted Healthcare Partner
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -62,7 +62,7 @@ const About = () => {
                 <div className="bg-gradient-to-r from-primary-500 to-accent-500 w-16 h-16 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:rotate-6 transition-transform duration-300">
                   <stat.icon className="w-8 h-8 text-white" strokeWidth={2} />
                 </div>
-                <div className="text-4xl font-display font-bold gradient-text mb-2">
+                <div className="text-3xl md:text-4xl font-display font-bold gradient-text mb-2">
                   {stat.value}
                 </div>
                 <div className="text-gray-600 font-medium">{stat.label}</div>
@@ -75,7 +75,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left - Story */}
           <div className="space-y-6">
-            <h3 className="text-3xl font-display font-bold text-gray-900">
+            <h3 className=" text-2xl md:text-3xl font-display font-bold text-gray-900">
               Our Story
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
@@ -109,7 +109,7 @@ const About = () => {
                 className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 border border-gray-100 hover:border-primary-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="text-4xl mb-4">{value.emoji}</div>
+                <div className="text-3xl md:text-4xl mb-4">{value.emoji}</div>
                 <h4 className="text-xl font-display font-bold text-gray-900 mb-3">
                   {value.title}
                 </h4>
@@ -125,7 +125,7 @@ const About = () => {
         <div className="mt-20 relative overflow-hidden rounded-3xl">
           <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 opacity-90"></div>
           <div className="relative px-8 py-16 text-center text-white">
-            <h3 className="text-3xl md:text-4xl font-display font-bold mb-4">
+            <h3 className="text-2xl md:text-3xl  font-display font-bold mb-4">
               Ready to Experience Better Healthcare?
             </h3>
             <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">

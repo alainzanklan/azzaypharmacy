@@ -72,7 +72,7 @@ const Services = () => {
           <span className="inline-block bg-gradient-to-r from-primary-100 to-accent-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium">
             Our Services
           </span>
-          <h2 className="text-4xl md:text-5xl font-display font-bold gradient-text">
+          <h2 className="text-3xl md:text-4xl font-display font-bold gradient-text">
             Comprehensive Healthcare Solutions
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -122,17 +122,17 @@ const Services = () => {
 
         {/* Product Categories */}
         <div className="glass-effect rounded-3xl p-8 md:p-12">
-          <h3 className="text-3xl font-display font-bold text-center mb-8 gradient-text">
+          <h3 className="text-2xl md:text-3xl font-display font-bold text-center mb-8 gradient-text">
             Popular Product Categories
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-4">
             {products.map((product, index) => (
               <div
                 key={product.name}
-                className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-100"
+                className="bg-white rounded-xl p-6 sm:p-4 text-center shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-100"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="text-3xl mb-3">
+                <div className="text-2xl md:text-3xl sm:text-2xl mb-3">
                   {index === 0 && '🔎'}
                   {index === 1 && '💄'}
                   {index === 2 && '💊'}

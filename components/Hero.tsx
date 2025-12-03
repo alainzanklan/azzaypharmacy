@@ -33,11 +33,11 @@ const Hero = () => {
           <div className={`space-y-8 ${mounted ? 'animate-slide-up' : 'opacity-0'}`}>
             <div className="inline-block">
               <span className="bg-gradient-to-r from-primary-100 to-accent-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium">
-                🌟 Your Health, Our Priority
+                🌟 Your Life Is Important
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight">
+            <h1 className="text-5xl md:text-5xl lg:text-7xl font-display font-bold leading-tight">
               Welcome to{' '}
               <span className="gradient-text">Azzay</span>
               <br />
@@ -87,7 +87,7 @@ const Hero = () => {
           <div className={`relative ${mounted ? 'animate-scale-in' : 'opacity-0'}`} style={{ animationDelay: '0.90s' }}>
             <div className="relative h-[500px] w-full">
               {/* Back Image - Bottom Layer */}
-              <div className="absolute top-12 left-5 w-64 h-80 glass-effect rounded-3xl overflow-hidden shadow-xl transform hover:rotate-3 transition-transform duration-100 animate-none">
+              <div className="absolute left-0 top-14 md:top-14 md:left-5 w-64 h-80 glass-effect rounded-3xl overflow-hidden shadow-xl transform transition-transform duration-100 animate-none">
                 <Image
                   src="/images/pharmacy-1.jpeg"
                   alt="Pharmacy Interior"
@@ -98,18 +98,19 @@ const Hero = () => {
               </div>
 
               {/* Middle Image - Center Layer */}
-              <div className="absolute top-0 right-12 w-72 h-96 glass-effect rounded-3xl overflow-hidden shadow-2xl transform hover:rotate-0 transition-transform duration-500 animate-scale-in z-10" style={{ animationDelay: '1s' }}>
+              <div className="absolute right-0 md:top-0 md:right-20 w-60 md:w-72 h-80 glass-effect rounded-3xl overflow-hidden shadow-2xl transform hover:rotate-0 transition-transform duration-500 animate-scale-in z-10" style={{ animationDelay: '1s' }}>
                 <Image
                   src="/images/pharmacy-2.jpeg"
                   alt="Pharmacist Consultation"
                   fill
                   className="object-cover"
+                  objectPosition='top'
                   priority
                 />
               </div>
 
               {/* Front Image - Top Layer */}
-              <div className="absolute bottom-0 left-20 w-56 h-72 glass-effect rounded-3xl overflow-hidden shadow-xl  hover:rotate-6 transition-transform duration-500 animate-slide-up z-20" style={{ animationDelay: '2s' }}>
+              <div className="absolute left-16 bottom-12 md:bottom-12 md:left-28 w-60 h-64 glass-effect rounded-3xl overflow-hidden shadow-xl transition-transform duration-500 animate-slide-up z-20" style={{ animationDelay: '2s' }}>
                 <Image
                   src="/images/pharmacy-3.jpeg"
                   alt="Medication Products"
