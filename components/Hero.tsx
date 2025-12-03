@@ -110,7 +110,7 @@ const Hero = () => {
               </div>
 
               {/* Front Image - Top Layer */}
-              <div className="absolute left-16 bottom-12 md:bottom-12 md:left-28 w-60 h-64 glass-effect rounded-3xl overflow-hidden shadow-xl transition-transform duration-500 animate-slide-up z-20" style={{ animationDelay: '2s' }}>
+              <div className="absolute left-12 bottom-0 w-56 h-72 sm:left-16 sm:bottom-12 sm:w-48 sm:h-64 md:left-28 md:w-60 glass-effect rounded-3xl overflow-hidden shadow-xl transition-transform duration-500 animate-slide-up z-20" style={{ animationDelay: '2s' }}>
                 <Image
                   src="/images/pharmacy-3.jpeg"
                   alt="Medication Products"
