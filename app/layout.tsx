@@ -4,19 +4,19 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   variable: '--font-sans',
 })
 
-const poppins = Poppins({ 
+const poppins = Poppins({
   weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
   variable: '--font-display',
 })
 
 export const metadata: Metadata = {
-  title: 'VitaCare Pharmacy - Your Health, Our Priority',
+  title: 'Azzay Pharmacy Ltd - Your Life Is Important',
   description: 'Modern pharmacy offering quality medications, health consultations, and wellness products. Your trusted healthcare partner.',
 }
 
