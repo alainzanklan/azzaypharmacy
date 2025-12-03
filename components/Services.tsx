@@ -121,7 +121,7 @@ const Services = () => {
         </div>
 
         {/* Product Categories */}
-        <div className="glass-effect rounded-3xl p-8 md:p-12">
+        <div className="glass-effect rounded-3xl p-4 md:p-12">
           <h3 className="text-2xl md:text-3xl font-display font-bold text-center mb-8 gradient-text">
             Popular Product Categories
           </h3>
@@ -129,10 +129,10 @@ const Services = () => {
             {products.map((product, index) => (
               <div
                 key={product.name}
-                className="bg-white rounded-xl p-6 sm:p-4 text-center shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-100"
+                className="bg-white rounded-xl p-6 sm:p-2 text-center shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-100"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="text-2xl md:text-3xl sm:text-2xl mb-3">
+                <div className="text-2xl md:text-3xl mb-3">
                   {index === 0 && '🔎'}
                   {index === 1 && '💄'}
                   {index === 2 && '💊'}
