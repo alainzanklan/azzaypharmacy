@@ -85,9 +85,9 @@ const Hero = () => {
 
           {/* Right Content - Layered Images */}
           <div className={`relative ${mounted ? 'animate-scale-in' : 'opacity-0'}`} style={{ animationDelay: '0.90s' }}>
-            <div className="relative h-[500px] w-full">
+            <div className="relative h-[350px] md:h-[500px] w-full">
               {/* Back Image - Bottom Layer */}
-              <div className="absolute left-0 top-14 md:top-14 md:left-5 w-60 h-52 md:w-80 md:h-60 glass-effect rounded-2xl overflow-hidden shadow-xl transform transition-transform duration-100 animate-none">
+              <div className="absolute left-6 top-20 md:top-14 md:left-0 w-40 h-36 md:w-80 md:h-52 glass-effect rounded-2xl overflow-hidden shadow-xl transform transition-transform duration-100 animate-none">
                 <Image
                   src="/images/pharmacy-1.jpeg"
                   alt="Pharmacy Interior"
@@ -98,19 +98,18 @@ const Hero = () => {
               </div>
 
               {/* Middle Image - Center Layer */}
-              <div className="absolute right-0 top-4 md:top-0 md:right-20 w-52 h-52 md:w-80 md:h-60 glass-effect rounded-2xl overflow-hidden shadow-2xl transform hover:rotate-0 transition-transform duration-500 animate-scale-in z-10" style={{ animationDelay: '1s' }}>
+              <div className="absolute right-6 top-14 md:top-0 md:right-16 w-40 h-36 md:w-80 md:h-52 glass-effect rounded-2xl overflow-hidden shadow-2xl transform hover:rotate-0 transition-transform duration-500 animate-scale-in z-10" style={{ animationDelay: '1s' }}>
                 <Image
                   src="/images/pharmacy-2.jpeg"
                   alt="Pharmacist Consultation"
                   fill
                   className="object-cover"
-                  objectPosition='top'
                   priority
                 />
               </div>
 
               {/* Front Image - Top Layer */}
-              <div className="absolute right-16 bottom-36 md:bottom-20 w-52 h-48 md:h-52 md:left-28 md:w-80 glass-effect rounded-2xl overflow-hidden shadow-xl transition-transform duration-500 animate-slide-up z-20" style={{ animationDelay: '2s' }}>
+              <div className="absolute right-20 bottom-16 md:bottom-28 w-40 h-36 md:h-52 md:left-24 md:w-80 glass-effect rounded-2xl overflow-hidden shadow-xl transition-transform duration-500 animate-slide-up z-20" style={{ animationDelay: '2s' }}>
                 <Image
                   src="/images/pharmacy-3.jpeg"
                   alt="Medication Products"

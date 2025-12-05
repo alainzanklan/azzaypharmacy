@@ -1,6 +1,8 @@
 'use client'
 
 import { Activity, TestTube, Droplet, Scale, Sparkles, BookOpen } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
 import { useState } from 'react'
 
 const Services = () => {
@@ -14,6 +16,7 @@ const Services = () => {
       color: 'from-primary-500 to-primary-600',
       bgColor: 'bg-primary-50',
       iconColor: 'text-primary-600',
+      image: '/images/services/bp.jpg'
     },
     {
       icon: TestTube,
@@ -22,6 +25,7 @@ const Services = () => {
       color: 'from-accent-500 to-accent-600',
       bgColor: 'bg-accent-50',
       iconColor: 'text-accent-600',
+      image: '/images/services/malaria.jpg'
     },
     {
       icon: Droplet,
@@ -30,6 +34,7 @@ const Services = () => {
       color: 'from-pink-500 to-pink-600',
       bgColor: 'bg-pink-50',
       iconColor: 'text-pink-600',
+      image: '/images/services/glucose.jpg'
     },
     {
       icon: Scale,
@@ -38,6 +43,7 @@ const Services = () => {
       color: 'from-purple-500 to-purple-600',
       bgColor: 'bg-purple-50',
       iconColor: 'text-purple-600',
+      image: '/images/services/weight.jpg'
     },
     {
       icon: Sparkles,
@@ -46,6 +52,7 @@ const Services = () => {
       color: 'from-indigo-500 to-indigo-600',
       bgColor: 'bg-indigo-50',
       iconColor: 'text-indigo-600',
+      image: '/images/services/care.jpg'
     },
     {
       icon: BookOpen,
@@ -54,6 +61,7 @@ const Services = () => {
       color: 'from-teal-500 to-teal-600',
       bgColor: 'bg-teal-50',
       iconColor: 'text-teal-600',
+      image: '/images/services/info.jpg'
     },
   ]
 
@@ -94,26 +102,38 @@ const Services = () => {
                 className={`absolute inset-0 bg-gradient-to-r ${service.color} rounded-2xl blur-xl opacity-0 group-hover:opacity-20 transition-opacity duration-500`}
               ></div>
 
-              <div className="relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform group-hover:-translate-y-2 border border-gray-100">
-                <div className={`${service.bgColor} w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                  <service.icon className={`w-8 h-8 ${service.iconColor}`} strokeWidth={2} />
+              <div className="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform group-hover:-translate-y-2 border border-gray-100">
+                {/* Image Section */}
+                <div className="relative w-full h-48 overflow-hidden">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    priority={index < 3}
+                  />
+
                 </div>
 
-                <h3 className="text-2xl font-display font-bold mb-3 text-gray-900">
-                  {service.title}
-                </h3>
+                {/* Content Section */}
+                <div className="p-8">
+                  <h3 className="text-2xl font-display font-bold mb-3 text-gray-900">
+                    {service.title}
+                  </h3>
 
-                <p className="text-gray-600 leading-relaxed">
-                  {service.description}
-                </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    {service.description}
+                  </p>
 
-                <div className="mt-6">
-                  <a
-                    href="#contact"
-                    className={`inline-flex items-center text-sm font-medium bg-gradient-to-r ${service.color} bg-clip-text text-transparent group-hover:translate-x-2 transition-transform duration-300`}
-                  >
-                    Learn More →
-                  </a>
+                  <div className="mt-6">
+                    <Link
+                      href="#contact"
+                      className={`inline-flex items-center text-sm font-medium bg-gradient-to-r ${service.color} bg-clip-text text-transparent group-hover:translate-x-2 transition-transform duration-300`}
+                    >
+                      Learn More →
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
