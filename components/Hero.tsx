@@ -103,6 +103,7 @@ const Hero = () => {
                   src="/images/pharmacy-2.jpeg"
                   alt="Pharmacist Consultation"
                   fill
+                  objectPosition='top'
                   className="object-cover"
                   priority
                 />

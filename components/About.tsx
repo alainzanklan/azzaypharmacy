@@ -1,6 +1,7 @@
 'use client'
 
 import { Award, Users, Clock, Heart } from 'lucide-react'
+import Link from 'next/link'
 
 const About = () => {
   const stats = [
@@ -122,21 +123,22 @@ const About = () => {
         </div>
 
         {/* CTA Banner */}
-        <div className="mt-20 relative overflow-hidden rounded-3xl">
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 opacity-90"></div>
+        <div className="mt-20 relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary-500 to-accent-500">
+          <div className="absolute inset-0 bg-[url('/images/pharmacy-1.jpeg')] bg-cover bg-center opacity-10"></div>
           <div className="relative px-8 py-16 text-center text-white">
-            <h3 className="text-2xl md:text-3xl  font-display font-bold mb-4">
+            <h3 className="text-2xl md:text-3xl font-display font-bold mb-4">
               Ready to Experience Better Healthcare?
             </h3>
             <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
               Join thousands of satisfied customers who trust Azzay for their health needs.
             </p>
-            <a
+            <Link
+
               href="#contact"
               className="inline-block bg-white text-primary-600 px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
             >
               Visit Us Today
-            </a>
+            </Link>
           </div>
         </div>
       </div>
