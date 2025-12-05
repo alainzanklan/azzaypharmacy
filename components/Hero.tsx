@@ -82,12 +82,12 @@ const Hero = () => {
               ))}
             </div>
           </div>
-
           {/* Right Content - Layered Images */}
           <div className={`relative ${mounted ? 'animate-scale-in' : 'opacity-0'}`} style={{ animationDelay: '0.90s' }}>
-            <div className="relative h-[350px] md:h-[500px] w-full">
-              {/* Back Image - Bottom Layer */}
-              <div className="absolute left-6 top-20 md:top-14 md:left-0 w-40 h-36 md:w-80 md:h-52 glass-effect rounded-2xl overflow-hidden shadow-xl transform transition-transform duration-100 animate-none">
+            <div className="relative h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px] w-full max-w-lg mx-auto lg:mx-0">
+
+              {/* Back Image - Top Left */}
+              <div className="absolute left-0 top-0 w-[55%] sm:w-[58%] md:w-[60%] h-[45%] sm:h-[48%] glass-effect rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition-all duration-300 z-10">
                 <Image
                   src="/images/pharmacy-1.jpeg"
                   alt="Pharmacy Interior"
@@ -97,20 +97,19 @@ const Hero = () => {
                 />
               </div>
 
-              {/* Middle Image - Center Layer */}
-              <div className="absolute right-6 top-14 md:top-0 md:right-16 w-40 h-36 md:w-80 md:h-52 glass-effect rounded-2xl overflow-hidden shadow-2xl transform hover:rotate-0 transition-transform duration-500 animate-scale-in z-10" style={{ animationDelay: '1s' }}>
+              {/* Middle Image - Top Right (overlaps with first) */}
+              <div className="absolute right-0 top-[8%] w-[55%] sm:w-[58%] md:w-[60%] h-[45%] sm:h-[48%] glass-effect rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-all duration-300 z-20" style={{ animationDelay: '0.2s' }}>
                 <Image
                   src="/images/pharmacy-2.jpeg"
                   alt="Pharmacist Consultation"
                   fill
-                  objectPosition='top'
-                  className="object-cover"
+                  className="object-cover object-top"
                   priority
                 />
               </div>
 
-              {/* Front Image - Top Layer */}
-              <div className="absolute right-20 bottom-16 md:bottom-28 w-40 h-36 md:h-52 md:left-24 md:w-80 glass-effect rounded-2xl overflow-hidden shadow-xl transition-transform duration-500 animate-slide-up z-20" style={{ animationDelay: '2s' }}>
+              {/* Front Image - Bottom Center (overlaps with both) */}
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[65%] sm:w-[68%] md:w-[70%] h-[48%] sm:h-[50%] glass-effect rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-all duration-300 z-30" style={{ animationDelay: '0.4s' }}>
                 <Image
                   src="/images/pharmacy-3.jpeg"
                   alt="Medication Products"
@@ -121,27 +120,27 @@ const Hero = () => {
               </div>
 
               {/* Floating Badge - Top Right */}
-              <div className="absolute -top-4 -right-4 glass-effect rounded-2xl p-4 shadow-xl animate-float z-30 " style={{ animationDelay: '10s' }}>
-                <div className="flex items-center space-x-3">
-                  <div className="bg-primary-500 p-3 rounded-xl">
-                    <Shield className="w-6 h-6 text-white" />
+              <div className="absolute -top-2 -right-2 sm:top-0 sm:right-0 md:-top-3 md:-right-3 glass-effect rounded-xl md:rounded-2xl p-2.5 sm:p-3 md:p-4 shadow-xl animate-float z-40" style={{ animationDelay: '1s' }}>
+                <div className="flex items-center space-x-2">
+                  <div className="bg-gradient-to-br from-primary-500 to-primary-600 p-2 md:p-3 rounded-lg">
+                    <Shield className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white" />
                   </div>
                   <div>
-                    <p className="text-sm font-bold text-gray-800">Verified</p>
-                    <p className="text-xs text-gray-600">Licensed</p>
+                    <p className="text-[10px] sm:text-xs md:text-sm font-bold text-gray-800 whitespace-nowrap">Verified</p>
+                    <p className="text-[8px] sm:text-[10px] md:text-xs text-gray-600 whitespace-nowrap">Licensed</p>
                   </div>
                 </div>
               </div>
 
               {/* Floating Badge - Bottom Left */}
-              <div className="absolute -bottom-4 -left-4 glass-effect rounded-2xl p-4 shadow-xl animate-float z-30" style={{ animationDelay: '5s' }}>
-                <div className="flex items-center space-x-3">
-                  <div className="bg-accent-500 p-3 rounded-xl">
-                    <LucideUserCheck className="w-6 h-6 text-white" />
+              <div className="absolute -bottom-2 -left-2 sm:bottom-0 sm:left-0 md:-bottom-3 md:-left-3 glass-effect rounded-xl md:rounded-2xl p-2.5 sm:p-3 md:p-4 shadow-xl animate-float z-40" style={{ animationDelay: '1.5s' }}>
+                <div className="flex items-center space-x-2">
+                  <div className="bg-gradient-to-br from-accent-500 to-accent-600 p-2 md:p-3 rounded-lg">
+                    <LucideUserCheck className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white" />
                   </div>
                   <div>
-                    <p className="text-sm font-bold text-gray-800">Certified</p>
-                    <p className="text-xs text-gray-600">Pharmacists</p>
+                    <p className="text-[10px] sm:text-xs md:text-sm font-bold text-gray-800 whitespace-nowrap">Certified</p>
+                    <p className="text-[8px] sm:text-[10px] md:text-xs text-gray-600 whitespace-nowrap">Pharmacists</p>
                   </div>
                 </div>
               </div>
