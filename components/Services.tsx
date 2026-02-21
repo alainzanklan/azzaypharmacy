@@ -16,7 +16,7 @@ const Services = () => {
       color: 'from-primary-500 to-primary-600',
       bgColor: 'bg-primary-50',
       iconColor: 'text-primary-600',
-      image: '/images/services/bp.jpg'
+      image: '/images/services/bp.jpeg'
     },
     {
       icon: TestTube,
@@ -34,7 +34,7 @@ const Services = () => {
       color: 'from-pink-500 to-pink-600',
       bgColor: 'bg-pink-50',
       iconColor: 'text-pink-600',
-      image: '/images/services/glucose.jpg'
+      image: '/images/services/glucose.jpeg'
     },
     {
       icon: Scale,
@@ -61,7 +61,7 @@ const Services = () => {
       color: 'from-teal-500 to-teal-600',
       bgColor: 'bg-teal-50',
       iconColor: 'text-teal-600',
-      image: '/images/services/info.jpg'
+      image: '/images/services/info.jpeg'
     },
   ]
 
@@ -110,7 +110,7 @@ const Services = () => {
                     alt={service.title}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    className={`object-cover object-center group-hover:scale-110 transition-transform duration-500`}
                     priority={index < 3}
                   />
 
